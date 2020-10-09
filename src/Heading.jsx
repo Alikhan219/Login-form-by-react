@@ -14,7 +14,7 @@ const Heading = () => {
   const inputEventTwo = (event) => {
 
     
-    const [value, name] = event.target;
+    const {value, name} = event.target;
     setfullname((preValue) => {
       if (name === 'fname') {
         return {
