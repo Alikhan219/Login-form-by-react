@@ -6,14 +6,15 @@ const Heading = () => {
   const [fullname, setfullname] = useState({
     fname: '',
     lname: '',
+    email: '',
+    phone: '',
   });
 
 
   const inputEventTwo = (event) => {
-  console.log(event.target.value)
-  console.log(event.target.name)
-    const value = event.target.value;
-    const name = event.target.name;
+
+    
+    const [value, name] = event.target;
     setfullname((preValue) => {
       if (name === 'fname') {
         return {
